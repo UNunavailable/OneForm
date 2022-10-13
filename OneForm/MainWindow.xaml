@@ -1,0 +1,25 @@
+﻿<Window x:Class="OneForm.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OneForm"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ComboBox x:Name="cbCity" HorizontalAlignment="Left" Margin="153,21,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cbCity_SelectionChanged_1"/>
+        <ComboBox x:Name="cbWorkshop" HorizontalAlignment="Left" Margin="153,75,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cbWorkshop_SelectionChanged_1"/>
+        <ComboBox x:Name="cbWorker" HorizontalAlignment="Left" Margin="153,128,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lCity" Content="Выберите город:" HorizontalAlignment="Left" Margin="44,19,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lWorkshop" Content="Выберите цех:" HorizontalAlignment="Left" Margin="57,73,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lWorker" Content="Выберите сотрудника:" HorizontalAlignment="Left" Margin="13,126,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rbBrigadeOne" Content="Первая бригада" HorizontalAlignment="Left" Margin="153,178,0,0" VerticalAlignment="Top" GroupName="brigade"/>
+        <RadioButton x:Name="rbBrigadeTwo" Content="Вторая бригада" HorizontalAlignment="Left" Margin="153,198,0,0" VerticalAlignment="Top" GroupName="brigade"/>
+        <Label x:Name="lBrigade" Content="Выберите бригаду:" HorizontalAlignment="Left" Margin="32,180,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rbShiftOne" Content="Первая смена" HorizontalAlignment="Left" Margin="153,233,0,0" VerticalAlignment="Top" GroupName="shift"/>
+        <RadioButton x:Name="rbShiftTwo" Content="Вторая смена" HorizontalAlignment="Left" Margin="153,253,0,0" VerticalAlignment="Top" GroupName="shift"/>
+        <Label x:Name="lShift" Content="Выберите смену:" HorizontalAlignment="Left" Margin="43,235,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="bAccept" Content="Сохранить" HorizontalAlignment="Left" Margin="153,285,0,0" VerticalAlignment="Top" Width="120" Click="bAccept_Click"/>
+
+    </Grid>
+</Window>
